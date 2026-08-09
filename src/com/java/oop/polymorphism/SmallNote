@@ -1,0 +1,25 @@
+// ==========================================
+// 1. WHY WE USE 'super' IN METHOD OVERRIDING
+// (As per notes: Overriding happens ONLY in sub class)
+// ==========================================
+/*
+ * THE ISSUE: When a child class uses the exact same method name as the parent,
+ * calling that method directly inside the child class causes an infinite loop (it keeps calling itself).
+ *
+ * THE SOLUTION: We use 'super.methodName()' to explicitly tell Java:
+ * "Go to the parent class and run its version of the method first, then come back and run the child's extra code."
+ */
+
+
+// ==========================================
+// 2. WHY WE USE METHOD OVERLOADING
+// (As per notes: Overloading happens within the same class OR within the sub class)
+// ==========================================
+/*
+Laptop IS-A product Mobile IS-A product
+ * THE REASON: It makes the code much cleaner and easier to remember.
+ * Instead of creating 100 different method names for 100 different objects
+ * (like displayLaptop(), displayMobile(), displayWatch()),
+ * we just use ONE single method name (like displayDetails()).
+ * Java is smart enough to automatically pick the right method based on the input we pass to it.
+ */

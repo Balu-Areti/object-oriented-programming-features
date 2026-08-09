@@ -1,0 +1,5 @@
+Parent class = common business concept
+Child classes = different types of that concept
+Overloading = same operation, different inputs
+Overriding = each child behaves differently
+
