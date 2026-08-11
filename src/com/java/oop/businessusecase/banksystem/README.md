@@ -85,7 +85,7 @@ Inheritance is used to establish an **IS-A** relationship.
 
 **Why use inheritance?** It prevents code duplication. Without it, we would have to rewrite common fields in every account class.
 
-### 3. 🔐 Encapsulation & Getters/Setters
+### 3. 🔐 Encapsulation & Getters/Setters like JAVA BEEN uses Encapsulation with strict rules
 
 The fields in `BankAccount` are declared as `private`.
 **Why?** Because the object should control its own data. Another class (like `BankingService`) should not be able to directly modify the balance (`account.balance = 5000`). Instead, we use controlled methods like `account.deposit(amount)`.

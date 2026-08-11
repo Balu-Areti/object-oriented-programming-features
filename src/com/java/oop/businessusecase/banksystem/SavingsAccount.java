@@ -26,7 +26,6 @@ public class SavingsAccount extends BankAccount{
 
         // 2. Use .multiply() instead of *
         BigDecimal interestAmount = getBalance().multiply(rate);
-
         System.out.println("Savings Interest Earned: " + interestAmount);
     }
 }

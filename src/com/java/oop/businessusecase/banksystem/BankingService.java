@@ -39,7 +39,6 @@ public class BankingService {
     // Runtime polymorphism
     public void printAccountSummary(BankAccount account) {
         System.out.println("====== FETCHING ACCOUNT SUMMARY ======");
-        // Runtime polymorphism
         account.displayAccountDetails();
         account.calculateInterest();
     }
