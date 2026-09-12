@@ -1,6 +1,6 @@
 package com.java.oop.abstraction;
 
-public class Payment {
+public abstract class Payment {
     int id;
     int customerId;
     int amount;
@@ -10,10 +10,12 @@ public class Payment {
         this.customerId = customerId;
         this.amount = amount;
     }
-    public void pay(){
-        System.out.println("Payment Made");
-        System.out.println("Payment ID: "+ id);
-        System.out.println("Customer ID: "+ customerId);
-        System.out.println("Amount: "+ amount);
-    }
+//    public void pay(){
+//        System.out.println("Payment Made");
+//        System.out.println("Payment ID: "+ id);
+//        System.out.println("Customer ID: "+ customerId);
+//        System.out.println("Amount: "+ amount);
+//    }
+    public abstract void pay();//Abstract method
+    //Like contracts for implementation
 }

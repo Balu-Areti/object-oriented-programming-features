@@ -9,7 +9,10 @@ public class CODPayment extends Payment {
     }
 
     public void pay(){
-        super.pay();
+        System.out.println("Payment Made");
+        System.out.println("Payment ID: "+ id);
+        System.out.println("Customer ID: "+ customerId);
+        System.out.println("Amount: "+ amount);
         System.out.println("Payment Mode is COD");
         System.out.println("Delivery Fee :" + deliveryFee);
     }

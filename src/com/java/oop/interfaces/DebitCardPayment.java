@@ -1,14 +1,20 @@
-package com.java.oop.abstraction;
+package com.java.oop.interfaces;
 
-public class DebitCardPayment extends Payment{
-    String cardNumber;
+public class DebitCardPayment implements Payment{
+    int id;
+    int customerId;
+    int amount;
+    int cardNumber;
     int discountAmount;
 
-    public DebitCardPayment(int id, int customerId, int amount, String cardNumber, int discountAmount) {
-        super(id, customerId, amount);
+    public DebitCardPayment(int id, int customerId, int amount, int cardNumber, int discountAmount) {
+        this.id = id;
+        this.customerId = customerId;
+        this.amount = amount;
         this.cardNumber = cardNumber;
         this.discountAmount = discountAmount;
     }
+
     @Override
     public void pay() {
         System.out.println("Payment Made");

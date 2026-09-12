@@ -1,12 +1,18 @@
-package com.java.oop.abstraction;
+package com.java.oop.interfaces;
 
-public class UpiPayment extends Payment{
+public class UPIPayment implements Payment {
+    int id;
+    int customerId;
+    int amount;
     String upiId;
 
-    public UpiPayment(int id, int customerId, int amount, String upiId) {
-        super(id, customerId, amount);
+    public UPIPayment(int id, int customerId, int amount, String upiId) {
+        this.id = id;
+        this.customerId = customerId;
+        this.amount = amount;
         this.upiId = upiId;
     }
+
     @Override
     public void pay() {
         System.out.println("Payment Made");
