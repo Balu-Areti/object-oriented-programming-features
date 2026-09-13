@@ -8,8 +8,8 @@ public class Main {
         UPIPayment upiPayment1 = new UPIPayment(111,111,100,"12NOV");
         DebitCardPayment debitCardPayment = new DebitCardPayment(111,123,1234,1012345, 10);
 
-//        PaymentSevice paymentSevice = new PaymentSevice(debitCardPayment);
-//        paymentSevice.pay();
+        PaymentSevice paymentSevice = new PaymentSevice(debitCardPayment);
+        paymentSevice.pay();
 
         PaymentSevice Ps = new PaymentSevice(upiPayment1);
         Ps.pay();
