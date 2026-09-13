@@ -1,6 +1,6 @@
 package com.java.oop.interfaces;
 
-public class UPIPayment implements Payment {
+public class UPIPayment implements Payment,Refund {
     int id;
     int customerId;
     int amount;
@@ -21,5 +21,9 @@ public class UPIPayment implements Payment {
         System.out.println("Amount: "+ amount);
         System.out.println("UPI  Payment");
         System.out.println("UpiPayment Payment ID : " + upiId);
+    }
+    @Override
+    public void refundable() {
+        System.out.println("UPI : Processing Payment 1000");
     }
 }

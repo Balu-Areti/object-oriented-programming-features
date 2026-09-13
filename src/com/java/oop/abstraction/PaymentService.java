@@ -1,9 +1,16 @@
 package com.java.oop.abstraction;
 
+import com.java.oop.interfaces.CreditCardPayment;
+
 public class PaymentService {
 
 
     Payment payment;
+
+//    public PaymentService(CreditCardPayment payment) {
+//        this.payment = payment;
+//    }
+
     //Tightly coupled
 //    public PaymentService(Payment payment) {
 ////        this.payment = new Payment(111,111,1000);

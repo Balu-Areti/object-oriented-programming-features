@@ -1,6 +1,6 @@
 package com.java.oop.interfaces;
 
-public class DebitCardPayment implements Payment{
+public class DebitCardPayment implements Payment, Refund{
     int id;
     int customerId;
     int amount;
@@ -23,5 +23,9 @@ public class DebitCardPayment implements Payment{
         System.out.println("Amount: "+ amount);
         System.out.println("Card Number : " + cardNumber);
         System.out.println("Discount Amount : " + discountAmount);
+    }
+    @Override
+    public void refundable() {
+        System.out.println("CrediCard : Processing Payment 1000");
     }
 }

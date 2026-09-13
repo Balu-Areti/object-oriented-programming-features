@@ -14,6 +14,9 @@ public class PaymentSevice {
     public void paymentservice(Payment payment){
         this.payment = payment;
     }
+    public void isrefunded(Refund refund){
+        refund.refundable();
+    }
     public void creditcardpaymentservice(CreditCardPayment creditCardPayment){
         this.creditCardPayment = creditCardPayment;
     }

@@ -13,4 +13,5 @@ public class CODPayment implements Payment {
         System.out.println("Amount: "+ amount);
         System.out.println("Delivery Fee :" + deliveryFee);
     }
+
 }
