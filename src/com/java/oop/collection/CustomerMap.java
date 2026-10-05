@@ -56,7 +56,7 @@ public class CustomerMap {
         System.out.println(customerHashMap.get(customer1.getId()));
         System.out.println(customerHashMap.get(111));//Key value Object Map to find that particular element
 
-//------------------------------
+        //------------------------------
 
         HashMap<String, List<Customer>> customerMembershipMap = new HashMap<>();
         //CustomerService Logic
@@ -69,7 +69,6 @@ public class CustomerMap {
 
         // 2. call Service class
         CustomerService service = new CustomerService();
-
 
         //3.We give that mixed list to Sevice it give us to Map
         Map<String, List<Customer>> finalMap = service.getCustomerMembershipMap(allCustomers);
